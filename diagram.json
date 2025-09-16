@@ -14,25 +14,11 @@
     { "type": "wokwi-ds1307", "id": "rtc1", "top": 13.8, "left": 201.7, "attrs": {} },
     { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": 32, "left": -239.2, "attrs": {} },
     {
-      "type": "wokwi-pir-motion-sensor",
-      "id": "pir1",
-      "top": -101.6,
-      "left": 146.22,
-      "attrs": {}
-    },
-    {
       "type": "wokwi-lcd1602",
       "id": "lcd1",
       "top": -128,
       "left": 264.8,
       "attrs": { "pins": "i2c" }
-    },
-    {
-      "type": "wokwi-buzzer",
-      "id": "bz1",
-      "top": 60,
-      "left": 328.2,
-      "attrs": { "volume": "0.1" }
     },
     {
       "type": "wokwi-photoresistor-sensor",
@@ -68,15 +54,10 @@
     [ "rtc1:5V", "esp:5V", "red", [ "h-28.8", "v182", "h-182.4" ] ],
     [ "ldr1:VCC", "esp:3V3", "red", [ "h0" ] ],
     [ "ldr1:GND", "esp:GND.2", "black", [ "h67.2", "v-58", "h105.6" ] ],
-    [ "esp:19", "pir1:OUT", "green", [ "h0" ] ],
-    [ "pir1:VCC", "esp:5V", "red", [ "v249.6", "h-182.4" ] ],
-    [ "pir1:GND", "esp:GND.2", "black", [ "v9.6", "h-105.86" ] ],
     [ "esp:21", "lcd1:SDA", "green", [ "h153.6", "v-153.6" ] ],
     [ "esp:22", "lcd1:SCL", "green", [ "h38.4", "v-105.6" ] ],
     [ "lcd1:VCC", "esp:3V3", "red", [ "h0" ] ],
     [ "lcd1:GND", "esp:GND.2", "black", [ "h0" ] ],
-    [ "bz1:2", "esp:4", "green", [ "v19.2", "h-144.4", "v-48" ] ],
-    [ "bz1:1", "esp:GND.2", "black", [ "h-163.2", "v-115.2" ] ],
     [ "ldr1:AO", "esp:34", "green", [ "h38.4", "v-67.9" ] ],
     [ "ldr2:AO", "esp:35", "green", [ "h48", "v-77.5" ] ],
     [ "ldr2:VCC", "esp:3V3", "red", [ "h38.4", "v-96" ] ],
